@@ -1,47 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Potta+One&display=swap');
+
+
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #F0EDCA;
 }
 
-header, footer {
-    background-color: #333;
+header {
+    background-color: #F0EDCA;
     color: #fff;
-    text-align: center;
-    padding: 1rem;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
+
+header {
+    background-color: #F0EDCA;
+    color: #fff;
+ 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.toys-with-purpose-logo {
+    width: 220px;
+    height: auto;
+}
+
+
+.cta-button {
+    background-color: #F19436;
+    color: white;
+    font-family: 'Potta One', cursive;
+    font-size: 1.4rem;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.cta-button:hover {
+    background-color: #e08629;
+}
+
+.cta-button:active {
+    transform: scale(0.92);
+}
+
+
+.section-title {
+    text-align: center;
+    font-family: 'Potta One', cursive;
+    color: black;
+
+    font-size: 3rem;
+}
+
+#hero{
+    background-image: url('./assets/kid-laughing.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+}
+#get-toys {
+    background-color: #F0EDCA;
+    position: relative;
+}
+
+#get-toys #toy-block {
+    position: absolute;
+}
+
+#toys-have-purpose {
+    background-color: #F0EDCA; 
+}
+
+#toys-have-purpose h4 {
+    font-family: "Potta One", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: #e08629;
+    margin-top: 50px;
+    margin-bottom: 1rem;
+}
+
+#toys-have-purpose p {
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: black;
+}
+
+#toys-have-purpose .small-text-block {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#get-in-touch {
+    background-color: #F0EDCA;  
+}
+
+.large-text-block {
+    font-family: 'Potta One', cursive;
+    font-size: 2rem;
+}
+
+.large-text-block p {
+    max-width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.wave-block {
+    background-color: #F0EDCA;
+    background-image: url('./assets/wave.png');
+    background-size:cover;
+    background-position: top;
+    min-height: 250px;
+}
+
+
 
 main {
-    padding: 2rem;
+    padding: 0;
+    background-color: #F0EDCA;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 section {
     background-color: #fff;
-    margin-bottom: 2rem;
-    padding: 1rem;
-    border-radius: 5px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
 }
 
-h1, h2 {
-    color: #333;
+.metrics {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
-button {
-    background-color: #4CAF50;
-    border: none;
+.metric {
+    background-color: #e08629;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-button:hover {
-    background-color: #45a049;
+    font-family: "Montserrat", sans-serif;
+    font-style: bold;
+    font-size: 2rem;
 }

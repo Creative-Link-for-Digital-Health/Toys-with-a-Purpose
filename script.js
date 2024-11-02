@@ -10,9 +10,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         return color;
     }
-
-    changeColorBtn.addEventListener('click', function() {
-        const newColor = getRandomColor();
-        body.style.backgroundColor = newColor;
-    });
 });
