@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const changeColorBtn = document.getElementById('changeColorBtn');
-    const body = document.body;
 
-    function getRandomColor() {
-        const letters = '0123456789ABCDEF';
-        let color = '#';
-        for (let i = 0; i < 6; i++) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
+    const hamburger = document.querySelector('.hamburger');
+    const mobile_menu = document.querySelector('.mobile-menu');
+    const icon_x = document.querySelector('#icon-x');
+    
+    hamburger.addEventListener('click', () => {
+        mobile_menu.classList.toggle('show');
+    });
+
+    icon_x.addEventListener('click', () => {
+        mobile_menu.classList.toggle('show');
+    });
 });

@@ -15,7 +15,33 @@
             <button class="cta-button">Get Toys</button>
             <button class="cta-button">Contact Us</button>
         </div>
+
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
     </header>
+
+    <div class="mobile-menu toggle-content">
+
+        <div id="icon-x">
+            <svg width="4vw" height="4vw" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
+            </svg>
+        </div>
+        <ul>
+            <li>Home</li>
+            <li>About Us</li>
+            <li>Get Toys</li>
+            <li>Contact Us</li>
+        </ul>
+
+    </div>
+
+
+
     <main>      
         <section id="hero">
             <h1 class="section-title" style="font-size: 4em; color:white; padding-top: 100px;">Welcome</h2>
@@ -23,7 +49,7 @@
         <section id="get-toys">
             <div id="toy-block" style="width:100%;">
                 <img id="bear-with-airplane" style="width:25vw; position: absolute; left:0px; top:10vw;" src="./assets/bear_w_airplane.svg" alt="Bear with an airplane toy">
-                <img id="ball-with-kite" style="width:25vw; position: absolute; right:20vw; top:20vw;" src="./assets/ball_w_kite.svg" alt="Ball with kite">
+                <img id="ball-with-kite" style="width:25vw; position: absolute; right:20vw; top:25vw;" src="./assets/ball_w_kite.svg" alt="Ball with kite">
                 <img id="rocking-horse" style="width:25vw; position: absolute; right:0px; top:0px;" src="./assets/rockinghorse.svg" alt="Rocking horse toy">
             </div>
             <div class = "large-text-block">
@@ -50,16 +76,21 @@
                 <div class="metric">C</div>
             </div>
             <div class="wave-block" style="text-align: center;">
-                <img id="duck-with-airplane" style="width:25vw; position: absolute; left:0px; top:10vw;" src="./assets/duck_w_airplain.svg" alt="Duck with an airplane toy.">
-                <img id="upfront-bear" style="width:25vw; position: absolute; left:0px; top:10vw;" src="./assets/upfront_bear.svg" alt="Bear lifting his arms.">
-                <img id="robot-with-toys" style="width:25vw; position: absolute; left:0px; top:10vw;" src="./assets/robot_w_toys.svg" alt="Robot with toys.">
+                <img id="duck-with-airplane" style="width:25vw; left:0px; top:10vw;" src="./assets/duck_w_airplain.svg" alt="Duck with an airplane toy.">
+                <img id="upfront-bear" style="width:25vw; left:0px; top:10vw;" src="./assets/upfront_bear.svg" alt="Bear lifting his arms.">
+                <img id="robot-with-toys" style="width:25vw; left:0px; top:10vw;" src="./assets/robot_w_toys.svg" alt="Robot with toys.">
             </div>
         </section>
         <section id="contact-us">
             <h2 class="section-title">Contact Us</h2>
         </section>
         <section id="get-in-touch">
-            <button class="cta-button">Get in Touch</button>
+            <div class="phone-contact-block">
+                <img id="toy-phone" style="width:40vw; position: absolute; left:0px; top:0vw;" src="./assets/phone.svg" alt="Robot with toys.">
+                <button style="position: absolute; left:500px; top:10vw;" class="cta-button">Get in Touch</button>
+
+            </div>
+            
             <div class="wave-block" style="text-align: center;">
 
             </div>
@@ -67,14 +98,14 @@
 
     </main>
     <footer>
+
         <img class="toys-with-purpose-logo" src="./assets/toys_w_purpose_logo_color.svg" alt="Toys with a Purpose Logo">
-        <div>
-            <p>
-                900 South Limestone, Lexington KY
-                toyswithapurpose@email
-                (859) 323-5555
-            </p>
-        </div>
+
+        <p class="contact-info">
+            900 South Limestone, Lexington KY <br />
+            toyswithapurpose@uky.edu
+        </p>
+
     </footer>
     <script src="script.js"></script>
 </body>

@@ -28,9 +28,36 @@ header {
     padding: 20px;
 }
 
+main {
+    padding: 0;
+    background-color: #F0EDCA;
+
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+section {
+    background-color: #fff;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 60%;
+    padding-top: 40px;
+    padding-bottom: 60px;
+}
 
 .toys-with-purpose-logo {
-    width: 220px;
+    width: 15vw;
     height: auto;
 }
 
@@ -47,6 +74,10 @@ header {
     transition: background-color 0.3s, transform 0.1s;
 }
 
+.cta-buttons .cta-button {
+    margin-left: 30px;
+}
+
 .cta-button:hover {
     background-color: #e08629;
 }
@@ -61,7 +92,7 @@ header {
     font-family: 'Potta One', cursive;
     color: black;
 
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 #hero{
@@ -130,25 +161,6 @@ header {
     min-height: 250px;
 }
 
-
-
-main {
-    padding: 0;
-    background-color: #F0EDCA;
-
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
-section {
-    background-color: #fff;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
-
 .metrics {
     display: flex;
     justify-content: space-around;
@@ -171,4 +183,117 @@ section {
     font-family: "Montserrat", sans-serif;
     font-style: bold;
     font-size: 2rem;
+}
+
+.contact-info {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 1.2rem;
+    font-weight:400;
+
+    margin-left: 80px;
+}
+
+.phone-contact-block {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    padding: 80px;
+}
+
+
+/* Hamburger */
+
+.hamburger-line {
+    width: 80px;
+    height: 8px;
+    background-color: #e4a853;
+    margin: 10px 0;
+}
+
+.hamburger {
+    display:none;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+
+/* Mobile Menu */
+
+.mobile-menu {
+    width: 25%;
+    padding: 10px;
+    background-color: #F0EDCA;
+    position: absolute;  
+    top: 20px;
+    right: 20px; 
+
+    border: 5px solid #e08629;
+    border-radius: 10px;
+
+    display: none;
+}
+
+
+.mobile-menu ul {
+    color: #e08629;
+    font-family: "Montserrat", sans-serif;
+    font-style: bold;
+    font-size: 2rem;
+
+    padding-left: 0;
+    margin: 0;
+    padding: 0;
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+}
+
+.mobile-menu li {
+    list-style: none;
+    padding: 5px;
+    padding-left: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 4vw;
+}
+
+.mobile-menu li:hover {
+    background-color: #e08629;
+    color: white;
+}
+
+#icon-x {
+    color: #e08629;
+    position: absolute;
+    top: 1vw;
+    right: 1vw;
+
+    cursor: pointer;
+}
+
+.toggle-content {
+    display: none; /* Hidden by default */
+}
+
+.toggle-content.show {
+    display: block; /* Shown when .show class is added */
+}
+
+/* Tablet view */
+@media screen and (max-width: 1280px) {
+    .cta-buttons {
+        display: none;
+    }
+
+    .hamburger {
+        display:block;
+    }
+}
+
+/* Phone view */
+@media screen and (max-width: 769px) {
+    
 }
