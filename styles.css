@@ -47,6 +47,7 @@ section {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     margin-left: auto;
@@ -139,6 +140,7 @@ footer {
 
 #get-in-touch {
     background-color: #F0EDCA;  
+    position: relative;
 }
 
 .large-text-block {
@@ -163,6 +165,7 @@ footer {
 
 .metrics {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 80px;
     margin-bottom: 40px;
@@ -198,8 +201,9 @@ footer {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
-    position: relative;
     padding: 80px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
@@ -240,13 +244,13 @@ footer {
     color: #e08629;
     font-family: "Montserrat", sans-serif;
     font-style: bold;
-    font-size: 2rem;
+    font-size: 1.8rem;
 
     padding-left: 0;
     margin: 0;
     padding: 0;
 
-    margin-top: 40px;
+    margin-top: 60px;
     margin-bottom: 20px;
 
 }
@@ -275,11 +279,57 @@ footer {
 }
 
 .toggle-content {
-    display: none; /* Hidden by default */
+    display: none;
 }
 
 .toggle-content.show {
-    display: block; /* Shown when .show class is added */
+    display: block; 
+}
+
+/* Images */
+
+#bear-with-airplane {
+    width:25vw; 
+    position: absolute; 
+    left:0px; 
+    top:10vw;
+}
+
+#ball-with-kite {
+    width:25vw; 
+    position: absolute; 
+    right:20vw; 
+    top:25vw;
+}
+
+#rocking-horse {
+    width:25vw; 
+    position: absolute; 
+    right:0px; 
+    top:0px;
+}
+
+#duck-with-airplane {
+    width:25vw; 
+    left:0px; 
+    top:10vw;
+}
+
+#upfront-bear {
+    width:25vw; 
+    left:0px; 
+    top:10vw;
+}
+
+#robot-with-toys {
+    width:25vw; 
+    left:0px; 
+    top:10vw;
+}
+
+.icon-x-image {
+    width: 4vw;
+    height:4vw;
 }
 
 /* Tablet view */
@@ -291,9 +341,69 @@ footer {
     .hamburger {
         display:block;
     }
+
+    #ball-with-kite {
+        display: none;
+    }
 }
 
 /* Phone view */
 @media screen and (max-width: 769px) {
+
+    .toys-with-purpose-logo {
+        width: 30vw;
+        height: auto;
+    }
+
+    .mobile-menu {
+        width: 75%;
+    }
+
+    .contact-info {
+
+        font-size: 1.2rem;
+        font-weight:400;
+    
+        margin-left: 0;
+    }
+
+    #toys-have-purpose .small-text-block {
+        max-width: 80%;
+    }
+
+    .icon-x-image {
+        width:14vw;
+        height:14vw;
+    }
+
+    .large-text-block p {
+        max-width: 60%;
+    }
+
+    #bear-with-airplane {
+        top:120px
+    }
+
+    #rocking-horse {
+
+        top:80px;
+    }
+    #duck-with-airplane {
+        display: none;
+    }
+    
+    #upfront-bear {
+        width:50vw; 
+        left:0px; 
+        top:10vw;
+    }
+    
+    #robot-with-toys {
+        display: none;
+    }
+
+    .metric {
+        margin-top: 20px;
+    }
     
 }
