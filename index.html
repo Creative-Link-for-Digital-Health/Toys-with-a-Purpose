@@ -8,12 +8,12 @@
 </head>
 <body>
     <header>
-        <img class="toys-with-purpose-logo" src="./assets/toys_w_purpose_logo_color.svg" alt="Toys with a Purpose Logo">
+        <img class="toys-with-purpose-logo" src="./assets/toys_w_purpose_logo_color.svg" alt="Toys with a Purpose Logo" onclick="NavigateTo('/.')">
 
         <div class="cta-buttons">
-            <button class="cta-button">About Us</button>
-            <button class="cta-button">Get Toys</button>
-            <button class="cta-button">Contact Us</button>
+            <button class="cta-button" onclick="NavigateTo('/about.html')">About Us</button>
+            <button class="cta-button" onclick="NavigateTo('/get_toys.html')">Get Toys</button>
+            <button class="cta-button" onclick="NavigateTo('/contact.html')">Contact Us</button>
         </div>
 
         <div class="hamburger">
@@ -32,16 +32,16 @@
             </svg>
         </div>
         <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Get Toys</li>
-            <li>Contact</li>
+            <li onclick="NavigateTo('/.')">Home</li>
+            <li onclick="NavigateTo('/about.html')">About</li>
+            <li onclick="NavigateTo('/get_toys.html')">Get Toys</li>
+            <li onclick="NavigateTo('/contact.html')">Contact</li>
         </ul>
 
     </div>
 
     <main>      
-        <section id="hero">
+        <section class="hero hero-welcome">
             <h1 class="section-title" style="font-size: 4em; color:white; padding-top: 100px;">Welcome</h2>
         </section>
         <section id="get-toys">
@@ -63,13 +63,13 @@
         <section id="toys-have-purpose">
             <div class="small-text-block">
                 <h4>Toys Have A Purpose!</h4>
-                <p>
+                <p class="content-text">
                     Toys help children play. And just like magic, when children play, they learn and develop both mentally and physically.
                     Children with disabilities cannot play with toys off the shelf which means that they cannot play, and, just as important, they can’t interact with other children as equals.
                 </p>
             </div>
             <div class="metrics">
-                <div class="metric">1000 A</div>
+                <div class="metric">A</div>
                 <div class="metric">B</div>
                 <div class="metric">C</div>
             </div>

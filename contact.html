@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys with a Purpose: Contact</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <img class="toys-with-purpose-logo" src="./assets/toys_w_purpose_logo_color.svg" alt="Toys with a Purpose Logo" onclick="NavigateTo('/.')">
+
+        <div class="cta-buttons">
+            <button class="cta-button" onclick="NavigateTo('/about.html')">About Us</button>
+            <button class="cta-button" onclick="NavigateTo('/get_toys.html')">Get Toys</button>
+            <button class="cta-button" onclick="NavigateTo('/contact.html')">Contact Us</button>
+        </div>
+
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+    </header>
+
+    <div class="mobile-menu toggle-content">
+
+        <div id="icon-x">
+            <svg class="icon-x-image" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
+            </svg>
+        </div>
+        <ul>
+            <li onclick="NavigateTo('/.')">Home</li>
+            <li onclick="NavigateTo('/about.html')">About</li>
+            <li onclick="NavigateTo('/get_toys.html')">Get Toys</li>
+            <li onclick="NavigateTo('/contact.html')">Contact</li>
+        </ul>
+
+    </div>
+
+    <main>      
+        <section class="hero hero-contact">
+            <h1 class="section-title" style="font-size: 4em; color:white; padding-top: 100px;">Contact</h2>
+        </section>
+        <div class="wave-block-down">
+            <div class="small-text-block small-text-block-layout">
+                <img id="bear_w_dog" src="./assets/bear_w_dog.svg" alt="Bear with a dog toy">
+                <div class="contact-address">
+                    <h4 style="text-align: center; margin-top: 0;">900 South Limestone</h4>
+                    <h4 style="text-align: center; margin-top: 0;">Lexington KY</h4>
+                    <h4 style="text-align: center; margin-top: 0;">toyswithapurpose@uky.edu</h4>
+                    <h4 style="text-align: center; margin-top: 0;">(859) 323-5555</h4>
+                </div>
+            </div>
+        </div>
+        <section id="have-questions">
+            <h2 class="section-title">Have Questions? Fill Out Our Form Below!</h2>
+        </section>
+        <section id="toys-have-purpose">
+            Form here
+        </section>
+    </main>
+    <footer>
+
+        <img class="toys-with-purpose-logo" src="./assets/toys_w_purpose_logo_color.svg" alt="Toys with a Purpose Logo">
+
+        <p class="contact-info">
+            900 South Limestone, Lexington KY <br />
+            toyswithapurpose@uky.edu
+        </p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

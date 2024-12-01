@@ -11,4 +11,9 @@ document.addEventListener('DOMContentLoaded', function() {
     icon_x.addEventListener('click', () => {
         mobile_menu.classList.toggle('show');
     });
+    
 });
+
+const NavigateTo = (url) => {
+    window.location.href = url;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys with a Purpose: About</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <img class="toys-with-purpose-logo" src="./assets/toys_w_purpose_logo_color.svg" alt="Toys with a Purpose Logo" onclick="NavigateTo('/.')">
+
+        <div class="cta-buttons">
+            <button class="cta-button" onclick="NavigateTo('/about.html')">About Us</button>
+            <button class="cta-button" onclick="NavigateTo('/get_toys.html')">Get Toys</button>
+            <button class="cta-button" onclick="NavigateTo('/contact.html')">Contact Us</button>
+        </div>
+
+        <div class="hamburger">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </div>
+
+    </header>
+
+    <div class="mobile-menu toggle-content">
+
+        <div id="icon-x">
+            <svg class="icon-x-image" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path fill="currentColor" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"/>
+            </svg>
+        </div>
+        <ul>
+            <li onclick="NavigateTo('/.')">Home</li>
+            <li onclick="NavigateTo('/about.html')">About</li>
+            <li onclick="NavigateTo('/get_toys.html')">Get Toys</li>
+            <li onclick="NavigateTo('/contact.html')">Contact</li>
+        </ul>
+
+    </div>
+
+    <main>      
+        <section class="hero hero-about">
+            <h1 class="section-title" style="font-size: 4em; color:white; padding-top: 100px;">About Us</h2>
+        </section>
+
+        <div class="wave-block-down">
+            <div class="small-text-block about-text-block small-text-block-layout">
+                <div class="about-us-text">
+                    <h4>We have free toy libraries!</h4>
+                    <p class="content-text">
+                        Volunteers help us adapt all kinds of toys, especially toys that make lights, sound, and music: wooden puzzles, books, toys battery operated stuffed toys, motorcycles, fire engines, and cars.
+                    </p>
+
+                    <h4>We work with high school students</h4>
+                    <p class="content-text">
+                        with and without disabilities to help them solve real world problems. Kids team to learn with (and from) each other. And as they work, they gain viable skills that help with maturity and future employment.
+                    </p>
+
+                    <h4>We answer to communities:</h4>
+                    <p class="content-text">
+                        city leaders, retirees, teachers, parents bring their perspectives to bear. We make it happen where we live.
+                    </p>
+                </div>
+                <img id="slinkydog" src="./assets/slinkydog.svg" alt="Slinky Dog">
+            </div>
+        </div>
+    </main>
+    <footer>
+
+        <img class="toys-with-purpose-logo" src="./assets/toys_w_purpose_logo_color.svg" alt="Toys with a Purpose Logo">
+
+        <p class="contact-info">
+            900 South Limestone, Lexington KY <br />
+            toyswithapurpose@uky.edu
+        </p>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
